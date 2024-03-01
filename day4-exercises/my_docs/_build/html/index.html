@@ -38,24 +38,27 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="simple_math.poly_first">
 <span class="sig-prename descclassname"><span class="pre">simple_math.</span></span><span class="sig-name descname"><span class="pre">poly_first</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simple_math.poly_first" title="Link to this definition">¶</a></dt>
-<dd><p>A simple polynomial functioooon. ???? dont you see thaty? Returns the polynomial of the given numbers</p>
+<dd><p>A simple polynomial function. Returns the polynomial of the given numbers</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>x</strong><span class="classifier">float</span></dt><dd><p>A first number in the sum</p>
+<dt><strong>x</strong><span class="classifier">float</span></dt><dd><p>the function variable</p>
 </dd>
-<dt><strong>a0</strong><span class="classifier">float</span></dt><dd><p>A second number in the sum</p>
+<dt><strong>a0</strong><span class="classifier">float</span></dt><dd><p>A zero-order term in the polynomial (constant)</p>
 </dd>
-<dt><strong>a1</strong><span class="classifier">float</span></dt><dd><p>A second number in the sum</p>
+<dt><strong>a1</strong><span class="classifier">float</span></dt><dd><p>A first-order term in the polynomial</p>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"></dd>
+<dd class="field-even"><dl class="simple">
+<dt>The polynomial a0 + a1*x of the given numbers</dt><dd></dd>
+</dl>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">poly_first</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="go">5 </span>
+<span class="go">5</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -67,20 +70,25 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>x</strong><span class="classifier">float</span></dt><dd><p>A first number in the sum</p>
+<dt><strong>x</strong><span class="classifier">float</span></dt><dd><p>the function variable</p>
 </dd>
-<dt><strong>a0</strong><span class="classifier">float</span></dt><dd><p>A second number in the sum</p>
+<dt><strong>a0</strong><span class="classifier">float</span></dt><dd><p>A zero-order term in the polynomial (constant)</p>
 </dd>
-<dt><strong>a1</strong><span class="classifier">float</span></dt><dd></dd>
-<dt><strong>A second number in the sum</strong></dt><dd></dd>
+<dt><strong>a1</strong><span class="classifier">float</span></dt><dd><p>A first-order term in the polynomial</p>
+</dd>
+<dt><strong>a2: float</strong></dt><dd><p>A second-order term in the polynomial</p>
+</dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"></dd>
+<dd class="field-even"><dl class="simple">
+<dt>A second order polynomial of the given numbers</dt><dd></dd>
+</dl>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">poly_first</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="go">5 </span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">poly_second</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">27</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -101,13 +109,16 @@ greater than n, which it then returns.</p>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"></dd>
+<dd class="field-even"><dl class="simple">
+<dt>The sum of given numbers</dt><dd></dd>
+</dl>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="go">2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fib</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="go">5</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">8</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">simple_add</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="go">110</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -119,14 +130,17 @@ greater than n, which it then returns.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
-<dt><strong>a</strong><span class="classifier">float</span></dt><dd></dd>
-<dt><strong>The numerator</strong></dt><dd></dd>
-<dt><strong>b</strong><span class="classifier">float</span></dt><dd></dd>
-<dt><strong>The denominator</strong></dt><dd></dd>
+<dt><strong>a</strong><span class="classifier">float</span></dt><dd><p>The numerator</p>
+</dd>
+<dt><strong>b</strong><span class="classifier">float</span></dt><dd><p>The denominator</p>
+</dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"></dd>
+<dd class="field-even"><dl class="simple">
+<dt>The fraction of the given values</dt><dd></dd>
+</dl>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">simple_div</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
@@ -141,16 +155,26 @@ greater than n, which it then returns.</p>
 <dd><p>A simple multiplication function. Performs multiplication of the two numbers
 Parameters
 ———-
-a : float
-The first number in the product
-Returns
-——-
-b : float
-The second number in the product
-Examples
-——–
-&gt;&gt;&gt; simple_math.simple_mult(1, 4)
-4</p>
+a : float</p>
+<blockquote>
+<div><p>The first number in the product</p>
+</div></blockquote>
+<dl class="simple">
+<dt>b<span class="classifier">float</span></dt><dd><p>The second number in the product</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>The prodcut of the given values</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">simple_mult</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">4 </span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py function">
@@ -162,12 +186,15 @@ Examples
 <dd class="field-odd"><dl class="simple">
 <dt><strong>a</strong><span class="classifier">float</span></dt><dd><p>The numebr to subtract from</p>
 </dd>
-<dt><strong>b</strong><span class="classifier">float</span></dt><dd></dd>
-<dt><strong>The subtracted number</strong></dt><dd></dd>
+<dt><strong>b</strong><span class="classifier">float</span></dt><dd><p>The subtracted number</p>
+</dd>
 </dl>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"></dd>
+<dd class="field-even"><dl class="simple">
+<dt>The difference of the given numbers</dt><dd></dd>
+</dl>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">simple_math</span><span class="o">.</span><span class="n">simple_sub</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>

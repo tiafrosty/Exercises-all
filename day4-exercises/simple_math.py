@@ -18,13 +18,14 @@ def simple_add(a,b):
 
     Returns
     -------
+    The sum of given numbers
     
     Examples
     --------
-    >>> fib.fib(1)
-    2
-    >>> fib.fib(3)
-    5
+    >>> simple_add(3, 5)
+    8
+    >>> simple_add(10, 100)
+    110
     """
 
     return a+b
@@ -37,7 +38,7 @@ def simple_sub(a,b):
     a : float
         The numebr to subtract from
     b : float
-    The subtracted number
+        The subtracted number
 
     Returns
     -------
@@ -55,9 +56,9 @@ def simple_mult(a,b):
     Parameters
     ----------
     a : float
-    The first number in the product
+        The first number in the product
     b : float
-    The second number in the product
+        The second number in the product
 
     Returns
     -------
@@ -76,9 +77,9 @@ def simple_div(a,b):
     Parameters
     ----------
     a : float
-    The numerator
+        The numerator
     b : float
-    The denominator
+        The denominator
 
     Returns
     -------
@@ -98,11 +99,11 @@ def poly_first(x, a0, a1):
     Parameters
     ----------
     x : float
-        A first number in the sum
+        the function variable
     a0 : float
-        A second number in the sum
+        A zero-order term in the polynomial (constant)
     a1 : float
-        A second number in the sum
+        A first-order term in the polynomial
 
     Returns
     -------
@@ -111,7 +112,8 @@ def poly_first(x, a0, a1):
     Examples
     --------
     >>> simple_math.poly_first(1, 4)
-    5 """
+    5
+    """
 
     return a0 + a1*x
 
@@ -122,20 +124,24 @@ def poly_second(x, a0, a1, a2):
     Parameters
     ----------
     x : float
-        A first number in the sum
+        the function variable
     a0 : float
-        A second number in the sum
+        A zero-order term in the polynomial (constant)
     a1 : float
-    A second number in the sum
+        A first-order term in the polynomial
+    a2: float
+        A second-order term in the polynomial
+
 
     Returns
     -------
-    A second order polynomial of the given numbers 
+        A second order polynomial of the given numbers 
 
     Examples
     --------
-    >>> simple_math.poly_first(1, 4)
-    5 """
+    >>> simple_math.poly_second(2, 5, 3, 4)
+    27
+    """
 
     return poly_first(x, a0, a1) + a2*(x**2)
 
