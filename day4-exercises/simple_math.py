@@ -5,16 +5,14 @@
 def simple_add(a,b):
     
     """
-    Return the first Fibonacci number above n.
-    Iteratively calculate Fibonacci numbers until it finds one
-    greater than n, which it then returns.
+    Return the sum of given numbers
 
     Parameters
     ----------
     a : integer
-        The minimum threshold for the desired Fibonacci number.
+        the first in the sum
     b : integer
-        The first Fibonacci number greater than the input, `n`.
+        The second order in the sum
 
     Returns
     -------
